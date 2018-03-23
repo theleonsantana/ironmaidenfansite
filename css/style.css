@@ -1,0 +1,242 @@
+/* fonts */
+@font-face {
+  font-family: 'book_of_souls';
+  src: url('../fonts/the_book_of_souls_font_v4.0.woff2') format('woff2'),
+    url('../fonts/the_book_of_souls_font_v4.0.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* global styles */
+
+section h3 {
+  font-family: 'book_of_souls';
+  text-align: center;
+  padding: 1em 0 0.5em;
+  color: rgb(238, 28, 37);
+  word-spacing: 10px;
+}
+
+.background-black {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1em 0 1em;
+}
+
+/* Video Styles */
+.v-header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.v-container {
+  max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.fullscreen-video-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fullscreen-video-wrap video {
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 50%; /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%);
+}
+
+.header-overlay {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1;
+  background: rgb(0, 0, 0);
+  opacity: 0.75;
+}
+
+.header-content {
+  z-index: 2;
+}
+.header-content img {
+  width: 326px;
+}
+
+/* tour dates */
+#tour-dates {
+  color: rgb(255, 255, 255);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment: fixed;
+  background-image: url('../img/background.jpg');
+  min-height: 100vh;
+}
+
+#tour-dates div table thead tr th,
+#tour-dates div table tbody tr td,
+th {
+  color: rgb(255, 255, 255);
+}
+
+/* photos */
+#photos {
+  max-width: 100%;
+  margin: auto;
+  background: rgb(0, 0, 0);
+}
+.main-image img,
+.images img {
+  width: 100%;
+}
+.images {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+/* animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in 1 forwards;
+}
+
+/* album info */
+
+#album {
+  color: rgb(255, 255, 255);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment: fixed;
+  background-image: url('../img/ironmaiden-album-bg.jpg');
+  min-height: 100vh;
+}
+
+.album-info {
+  min-height: 100%;
+}
+.album-info h3 {
+  padding: 1em 0 6em;
+}
+.album-info ol {
+  padding: 0.8em 0 0.8em;
+}
+.album-info ol li {
+  font-size: 0.8em;
+}
+.album-info img {
+  margin-top: 0.9em;
+  width: 90%;
+  border: 1px solid #fcfcfc;
+  border-style: inset;
+}
+
+#album-credits {
+  text-align: center;
+}
+
+#news {
+  height: 50vh;
+  max-width: 100%;
+  background: rgb(0, 0, 0);
+}
+
+#twitterNews {
+  font-size: 0.9em;
+  height: 250px;
+}
+
+#twitterNews .tweet-content {
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+  padding: 0 0.5em 0;
+}
+
+.tweet-content a,
+.tweet-content a:hover {
+  text-decoration: none;
+  color: rgb(242, 240, 62);
+}
+
+.TweetAuthor-link,
+.TweetAuthor-link:hover {
+  text-decoration: none;
+  color: rgb(238, 28, 37);
+}
+
+.tweet-infos {
+  color: rgb(83, 83, 83);
+}
+
+.TweetAuthor img {
+  width: 30px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid white;
+}
+
+.TweetAuthor span {
+  display: inline-block;
+}
+/* twitter badge */
+
+.TweetAuthor-verifiedBadge {
+  background: url('../img/twitterVerifiedIcon.svg') no-repeat;
+  display: block;
+}
+b.u-hiddenVisually {
+  visibility: hidden;
+}
+
+/* Custom Boostrap styles */
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+  background-color: rgb(238, 28, 37);
+}
+.navbar {
+  background-color: rgb(19, 19, 19);
+  border-color: #e7e7e7;
+}
+
+/* media queries */
+/* 
+@media (min-width: 992px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 576px) {
+} */
